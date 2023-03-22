@@ -1,0 +1,72 @@
+* {
+    /*universal*/
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+    /*tipo*/
+    color: blue;
+}
+
+h2 {
+    color: red;
+}
+
+h3 {
+    color: black;
+}
+
+.importante {
+    /*classe*/
+    font-weight: bold;
+}
+
+#unico {
+    /*id*/
+    background-color: aqua;
+}
+
+a[target=_blank] {
+    /*atributo*/
+    background-color: yellow;
+}
+
+div:hover {
+    /*pseudo-classe*/
+    background-color: violet;
+}
+
+p::first-letter {
+    /*pseudo-elemento*/
+    font-size: 2em;
+}
+
+div p {
+    background-color: black;
+}
+
+div>p {
+    background-color: black;
+}
+
+div+p {
+    background-color: palevioletred;
+}
+
+.field_set {
+    border-color: #F00;
+    border-style: solid;
+}
+
+
+tbody td {
+    padding: 30px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: darkblue;
+    color: #fff;
+}

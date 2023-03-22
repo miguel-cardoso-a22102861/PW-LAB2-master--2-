@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+
+<head>
+    <title>Odivelas</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <meta name="author" content="Miguel Cardoso">
+    <meta name="description" content="Website sobre Odivelas">
+    <meta name="keywords" content="palavras chave">
+    <link rel="icon" type="image/gif" href="images/icon.png" />
+</head>
+
+
+<body>
+    <main>
+        <sectionAuthor>
+            <header>
+                <meta name="author" content="Miguel Cardoso">
+                <meta name="description" content="Website sobre Odivelas">
+                <meta name="keywords" content="palavras chave">
+                <title>Odivelas</title>
+                <link rel="icon" type="image/gif" href="images/icon.png" />
+            </header>
+        </sectionAuthor>
+        <sectionTitle>
+            <h3>Quizz</h3>
+        </sectionTitle>
+        <sectionParagraph>
+            <p>
+                Nesta página vai ser realizado um quizz para testar se o utilizador conhece
+                bem a cidade de Odivelas.
+            </p>
+        </sectionParagraph>
+        <sectionImage>
+            <figure>
+                <img src="images/odivelas.jpg" alt="Odivelas">
+
+            </figure>
+        </sectionImage>
+
+        <sectionLinks>
+            <nav>
+                <a href="index.html">🏡Home</a>
+                <a href="local.html">🌎Localização</a>
+                <a href="multimedia.html">📷Multimedia</a>
+                <a href="info.html">👍Informação</a>
+                <a href="quizz.html">❓Quizz</a>
+                <a href="html5-css.html">❓Html CSS curiosidades</a>
+            </nav>
+        </sectionLinks>
+
+        <sectionForm>
+            <form method="POST" action="mailto: a22102861@alunos.ulht.pt" enctype="multipart/form-data">
+                <fieldset class="field_set">
+                    <legend>Info</legend>
+                    <label for="fname">Primeiro Nome:</label>
+                    <input type="text" id="fname" name="fname" required maxlength="10" autofocus><br><br>
+                    <label for="lname">Último Nome:</label>
+                    <input type="text" id="lname" name="lname" required maxlength="10" autofocus><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="pin">PIN: (4 digitos)</label>
+                    <input name="pin" type="password" pattern="\d{4, 4}" required maxlength="4">
+                </fieldset>
+                <fieldset class="field_set">
+                    <legend>Perguntas</legend>
+                    <div>
+                        <label for="select-freguesia">Se vive em odivelas por favor selecione a sua freguesia:
+                            (se não viver ignore)
+                        </label>
+                        <select name="freguesias" id="select-freguesia">
+                            <option value="">--Por favor selecione uma freguesia--</option>
+                            <option value="Caneças">Caneças</option>
+                            <option value="Ramada">Ramada</option>
+                            <option value="Pontinha">Pontinha</option>
+                            <option value="Povoa de Santo Adrião">Povoa de Santo Adrião</option>
+                            <option value="Olival Basto">Olival Basto</option>
+                            <option value="Famões">Famões</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="fname">Conhece Odivelas?</label></label><br>
+                        <input type="checkbox" id="Sim" name="Sim">
+                        <label for="Sim">Sim</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Não" name="Não">
+                        <label for="Não">Não</label>
+                    </div>
+                    <input type="image" id="image" alt="Login" src="images/odivelas.jpg">
+
+                    <label for="escolha-freguesia">Gostava de viver em que freguesia:</label>
+                    <input list="selecionar-freguesia" id="escolha-freguesia" name="selecionar-freguesia">
+
+                    <datalist id="ice-cream-flavors">
+                        <option value="Chocolate">
+                        <option value="Coconut">
+                        <option value="Mint">
+                        <option value="Strawberry">
+                        <option value="Vanilla">
+                    </datalist>
+
+                    <p>Gostava de viver em que freguesia?</p>
+
+                    <div>
+                        <input type="radio" id="html" name="freguesias" value="Ramada">
+                        <label for="html">Ramada</label><br>
+                        <input type="radio" id="html" name="freguesias" value="Pontinha">
+                        <label for="html">Pontinha</label><br>
+                        <input type="radio" id="html" name="freguesias" value="Caneças">
+                        <label for="html">Caneças</label><br>
+                        <input type="radio" id="html" name="freguesias" value="Caneças">
+                        <label for="html">Póvo de Santo Adrião e Olival Basto</label><br>
+                        <input type="radio" id="html" name="freguesias" value="Caneças">
+                        <label for="html">Famões</label><br>
+                    </div>
+
+                    <p>De 1 a 10 quanto é que classifica a marmelada de Odivelas</p>
+                    <div>
+                        <label for="vol">Classificação (entre 1 a 10):</label>
+                        <input type="range" id="marmelada" name="marmelada" min="1" max="10">
+                    </div>
+
+                    <p>Data a que está a preencher o seu questionário:</p>
+                    <div>
+                        <input type="date" id="start" name="comeco-questionario" value="2022-01-01" min="2022-01-01"
+                            max="2022-12-30">
+                    </div>
+                    <p>Hora e data a que está a preencher o seu questionário</p>
+                    <div>
+                        <input type="datetime-local" id="hora-questionario" name="hora-questionario"
+                            value="2022-01-01T19:30" min="2022-01-01T00:00" max="2022-12-30T00:00">
+                    </div>
+                    <p>Cor predominante de Odivelas </p>
+                    <div>
+                        <input type="color" id="head" name="head" value="#e66465">
+                        <label for="head">Cor Principal</label>
+
+
+                    </div>
+                    <div>
+                        <label for="tentacles">Numero de Freguesias (3-10):</label>
+
+                        <input type="number" id="tentacles" name="tentacles" min="3" max="10">
+
+                    </div>
+                    <p>Freguesias mais populadas(para a direita apresenta a maior população):</p>
+                    <div>
+                        <input type="range" id="caneças" name="caneças" min="0" max="11">
+                        <label for="volume">Caneças</label>
+                    </div>
+                    <div>
+                        <input type="range" id="pontinha" name="pontinha" min="0" max="100" value="90" step="10">
+                        <label for="cowbell">Pontinha</label>
+                    </div>
+                    <div>
+                        <input type="range" id="ramada" name="ramada" min="0" max="100" value="90" step="10">
+                        <label for="cowbell">Ramada</label>
+                    </div>
+
+                    <p>Codigo Postal de Odivelas</p>
+
+                    <div>
+                        <label for="country_code">Qual é o código postal de odivelas (4 numeros)?:</label>
+                        <input type="text" id="location_code" name="location_code" pattern="\d{4, 4}" required
+                            maxlength="4" title="4 numeros"><br><br>
+                    </div>
+
+                    <div>
+                        <label for="comentario">Escreva um comentário sobre Odivelas:</label> <BR></BR>
+                        <textarea id="comentario" name="comentario" rows="5" cols="33">
+                        </textarea>
+                    </div>
+                    <div>
+                        <input type="submit" />
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </form>
+
+        </sectionForm>
+
+
+
+
+
+    </main>
+</body>
+
+</html>
